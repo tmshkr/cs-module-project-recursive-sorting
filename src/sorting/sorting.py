@@ -55,7 +55,7 @@ def merge_in_place(arr, a, b):
 
     # both i and j in their respective range
     while i < len(a) and j < len(b):
-        # append the lesser element first
+        # insert the lesser element first
         if a[i] < b[j]:
             arr[k] = a[i]
             i += 1
@@ -64,7 +64,7 @@ def merge_in_place(arr, a, b):
             j += 1
         k += 1
 
-    # append the rest of the elements once
+    # insert the rest of the elements once
     # either i or j are out of range
     while i < len(a):
         arr[k] = a[i]
